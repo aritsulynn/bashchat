@@ -1,496 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-11-21T20:58:46.889046" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.12.1 on win32)" generated="2024-11-21T21:47:43.109355" rpa="false" schemaversion="5">
 <suite id="s1" name="robotTest" source="D:\Github\bashchat\robotTest\robotTest.robot">
-<test id="s1-t1" name="Test Chatbot Interaction Testing using Chrome" line="14">
+<test id="s1-t1" name="Test Chatbot Interaction Testing using Chrome" line="12">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-21T20:58:47.029270" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
-<msg time="2024-11-21T20:58:53.415434" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-21T20:58:53.415434" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF768162E88]
-	(No symbol) [0x00007FF768153BF9]
-	(No symbol) [0x00007FF76815594F]
-	(No symbol) [0x00007FF768153EBF]
-	(No symbol) [0x00007FF76815371B]
-	(No symbol) [0x00007FF76815365A]
-	(No symbol) [0x00007FF768151274]
-	(No symbol) [0x00007FF768151B3C]
-	(No symbol) [0x00007FF76816885A]
-	(No symbol) [0x00007FF7682001FE]
-	(No symbol) [0x00007FF7681DF2FA]
-	(No symbol) [0x00007FF7681FF412]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</msg>
+<msg time="2024-11-21T21:47:43.247735" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-11-21T20:58:47.029270" elapsed="6.422737">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF768162E88]
-	(No symbol) [0x00007FF768153BF9]
-	(No symbol) [0x00007FF76815594F]
-	(No symbol) [0x00007FF768153EBF]
-	(No symbol) [0x00007FF76815371B]
-	(No symbol) [0x00007FF76815365A]
-	(No symbol) [0x00007FF768151274]
-	(No symbol) [0x00007FF768151B3C]
-	(No symbol) [0x00007FF76816885A]
-	(No symbol) [0x00007FF7682001FE]
-	(No symbol) [0x00007FF7681DF2FA]
-	(No symbol) [0x00007FF7681FF412]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</status>
+<status status="PASS" start="2024-11-21T21:47:43.247735" elapsed="1.716931"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:47:44.965667" level="INFO">Typing text 'ขนมไข่ราคาเท่าไร' into text field 'xpath=//input[contains(@class, "rounded-xl")]'.</msg>
 <arg>xpath=//input[contains(@class, "rounded-xl")]</arg>
 <arg>${test_message}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:53.453008" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:44.964666" elapsed="0.119636"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:47:45.085307" level="INFO">Clicking button 'xpath=//button[contains(text(), "Send")]'.</msg>
 <arg>xpath=//button[contains(text(), "Send")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:53.453008" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:45.084302" elapsed="0.069930"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=(//div[contains(@class, "prose")])[last()]</arg>
-<arg>timeout=10</arg>
+<arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:53.453008" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:45.155231" elapsed="7.052744"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:47:52.219032" level="INFO">${bot_response} = ขนมไข่มีราคา 25 บาท เป็นขนมไทยโบราณที่มีรสชาติหวานนุ่มและมีเนื้อเบา</msg>
 <var>${bot_response}</var>
 <arg>xpath=(//div[contains(@class, "prose")])[last()]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:53.453008" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:52.207975" elapsed="0.011057"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
+<msg time="2024-11-21T21:47:52.220034" level="INFO">Bot's Response: ขนมไข่มีราคา 25 บาท เป็นขนมไทยโบราณที่มีรสชาติหวานนุ่มและมีเนื้อเบา</msg>
 <arg>Bot's Response: ${bot_response}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:53.453008" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:52.220034" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:53.453008" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:52.220034" elapsed="2.128306"/>
 </kw>
-<status status="FAIL" start="2024-11-21T20:58:47.027767" elapsed="6.425241">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF768162E88]
-	(No symbol) [0x00007FF768153BF9]
-	(No symbol) [0x00007FF76815594F]
-	(No symbol) [0x00007FF768153EBF]
-	(No symbol) [0x00007FF76815371B]
-	(No symbol) [0x00007FF76815365A]
-	(No symbol) [0x00007FF768151274]
-	(No symbol) [0x00007FF768151B3C]
-	(No symbol) [0x00007FF76816885A]
-	(No symbol) [0x00007FF7682001FE]
-	(No symbol) [0x00007FF7681DF2FA]
-	(No symbol) [0x00007FF7681FF412]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</status>
+<status status="PASS" start="2024-11-21T21:47:43.246735" elapsed="11.101605"/>
 </test>
-<test id="s1-t2" name="Reset Message Testing using Chrome" line="28">
+<test id="s1-t2" name="Reset Message Testing using Chrome" line="26">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-21T20:58:53.454006" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
-<msg time="2024-11-21T20:58:59.447810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-21T20:58:59.449316" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF768162E88]
-	(No symbol) [0x00007FF768153BF9]
-	(No symbol) [0x00007FF76815594F]
-	(No symbol) [0x00007FF768153EBF]
-	(No symbol) [0x00007FF76815371B]
-	(No symbol) [0x00007FF76815365A]
-	(No symbol) [0x00007FF768151274]
-	(No symbol) [0x00007FF768151B3C]
-	(No symbol) [0x00007FF76816885A]
-	(No symbol) [0x00007FF7682001FE]
-	(No symbol) [0x00007FF7681DF2FA]
-	(No symbol) [0x00007FF7681FF412]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</msg>
+<msg time="2024-11-21T21:47:54.349341" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-11-21T20:58:53.454006" elapsed="5.995310">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF768162E88]
-	(No symbol) [0x00007FF768153BF9]
-	(No symbol) [0x00007FF76815594F]
-	(No symbol) [0x00007FF768153EBF]
-	(No symbol) [0x00007FF76815371B]
-	(No symbol) [0x00007FF76815365A]
-	(No symbol) [0x00007FF768151274]
-	(No symbol) [0x00007FF768151B3C]
-	(No symbol) [0x00007FF76816885A]
-	(No symbol) [0x00007FF7682001FE]
-	(No symbol) [0x00007FF7681DF2FA]
-	(No symbol) [0x00007FF7681FF412]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</status>
+<status status="PASS" start="2024-11-21T21:47:54.349341" elapsed="1.712509"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:47:56.062857" level="INFO">Typing text 'ขนมไข่ราคาเท่าไร' into text field 'xpath=//input[contains(@class, "rounded-xl")]'.</msg>
 <arg>xpath=//input[contains(@class, "rounded-xl")]</arg>
 <arg>${test_message}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.449316" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:56.062857" elapsed="0.110668"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:47:56.174529" level="INFO">Clicking button 'xpath=//button[contains(text(), "Send")]'.</msg>
 <arg>xpath=//button[contains(text(), "Send")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.450323" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:56.173525" elapsed="0.097570"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=(//div[contains(@class, "prose")])[last()]</arg>
-<arg>timeout=10</arg>
+<arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.450323" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:47:56.271095" elapsed="7.880191"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:04.165811" level="INFO">${bot_response} = ขนมไข่มีราคา 25 บาท เป็นขนมหวานไทยที่นุ่มและหวาน มีเนื้อสัมผัสเบา ๆ ค่ะ</msg>
 <var>${bot_response}</var>
 <arg>xpath=(//div[contains(@class, "prose")])[last()]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.450323" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:04.152291" elapsed="0.013520"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
+<msg time="2024-11-21T21:48:04.166485" level="INFO">Bot's Response: ขนมไข่มีราคา 25 บาท เป็นขนมหวานไทยที่นุ่มและหวาน มีเนื้อสัมผัสเบา ๆ ค่ะ</msg>
 <arg>Bot's Response: ${bot_response}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.450323" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:04.165811" elapsed="0.000674"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:04.166485" level="INFO">Clicking button 'xpath=//button[contains(text(), "Reset")]'.</msg>
 <arg>xpath=//button[contains(text(), "Reset")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.450323" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:04.166485" elapsed="0.055395"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:04.230224" level="INFO">${messages} = 0</msg>
 <var>${messages}</var>
 <arg>xpath=//div[contains(@class, "prose")]</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.451321" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:04.222406" elapsed="0.007818"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-11-21T21:48:04.230752" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
 <arg>${messages}</arg>
 <arg>0</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.451321" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:04.230752" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-11-21T20:58:59.451321" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:04.231262" elapsed="2.131249"/>
 </kw>
-<status status="FAIL" start="2024-11-21T20:58:53.454006" elapsed="5.997315">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF768162E88]
-	(No symbol) [0x00007FF768153BF9]
-	(No symbol) [0x00007FF76815594F]
-	(No symbol) [0x00007FF768153EBF]
-	(No symbol) [0x00007FF76815371B]
-	(No symbol) [0x00007FF76815365A]
-	(No symbol) [0x00007FF768151274]
-	(No symbol) [0x00007FF768151B3C]
-	(No symbol) [0x00007FF76816885A]
-	(No symbol) [0x00007FF7682001FE]
-	(No symbol) [0x00007FF7681DF2FA]
-	(No symbol) [0x00007FF7681FF412]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</status>
+<status status="PASS" start="2024-11-21T21:47:54.348340" elapsed="12.014171"/>
 </test>
-<test id="s1-t3" name="Starting Prompt Testing using Chrome" line="47">
+<test id="s1-t3" name="Starting Prompt Testing using Chrome" line="45">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-21T20:58:59.453494" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<msg time="2024-11-21T21:48:06.363513" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-21T20:58:59.453494" elapsed="1.861776"/>
+<status status="PASS" start="2024-11-21T21:48:06.363513" elapsed="1.738975"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-11-21T20:59:01.319269" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF76813F4F5]
-	(No symbol) [0x00007FF7681E6247]
-	(No symbol) [0x00007FF7681FECE2]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</msg>
-<msg time="2024-11-21T20:59:01.319269" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF76813F4F5]
-	(No symbol) [0x00007FF7681E6247]
-	(No symbol) [0x00007FF7681FECE2]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</msg>
+<msg time="2024-11-21T21:48:08.117094" level="INFO">${prompts_visible} = 3</msg>
 <var>${prompts_visible}</var>
 <arg>xpath=//button[contains(@class, "bg-gray-200")]</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="FAIL" start="2024-11-21T20:59:01.316270" elapsed="0.004999">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF76813F4F5]
-	(No symbol) [0x00007FF7681E6247]
-	(No symbol) [0x00007FF7681FECE2]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</status>
+<status status="PASS" start="2024-11-21T21:48:08.102488" elapsed="0.014606"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-11-21T21:48:08.117094" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
 <arg>${prompts_visible}</arg>
 <arg>3</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.321269" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:08.117094" elapsed="0.000000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:08.117094" level="INFO">Clicking button 'xpath=//button[contains(text(), "ร้านอยู่ไหน")]'.</msg>
 <arg>xpath=//button[contains(text(), "${starting_prompt}")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.321269" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:08.117094" elapsed="0.077795"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:08.195890" level="INFO">Clicking button 'xpath=//button[contains(text(), "Send")]'.</msg>
 <arg>xpath=//button[contains(text(), "Send")]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.322510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:08.194889" elapsed="0.062590"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=(//div[contains(@class, "prose")])[last()]</arg>
-<arg>timeout=10</arg>
+<arg>timeout=20</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.322510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:08.257479" elapsed="7.457026"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:15.764532" level="INFO">${bot_response} = ร้าน Bash Coffee ตั้งอยู่ที่มหาวิทยาลัยมหิดล อาคาร ICT, 999 ถ. พุทธมณฑลสาย 4 ตำบลศาลายา อำเภอพุทธมณฑล จังหวัดนครปฐม ประเทศไทย
+เวลาทำการ: วันจันทร์ถึงวันศุกร์ 7:30 - 16:00
+เบอร์ติดต่อ: 0823587862
+อีเมล...</msg>
 <var>${bot_response}</var>
 <arg>xpath=(//div[contains(@class, "prose")])[last()]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.322510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:15.714505" elapsed="0.050027"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
+<msg time="2024-11-21T21:48:15.765989" level="INFO">Bot's Response: ร้าน Bash Coffee ตั้งอยู่ที่มหาวิทยาลัยมหิดล อาคาร ICT, 999 ถ. พุทธมณฑลสาย 4 ตำบลศาลายา อำเภอพุทธมณฑล จังหวัดนครปฐม ประเทศไทย
+เวลาทำการ: วันจันทร์ถึงวันศุกร์ 7:30 - 16:00
+เบอร์ติดต่อ: 0823587862
+อีเมล: bashcoffee.sy@gmail.com
+Instagram: Bash Coffee
+หากคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับโปรโมชั่นหรือเมนู สามารถสอบถามได้เลย!</msg>
 <arg>Bot's Response: ${bot_response}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.322510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:15.765989" elapsed="0.000000"/>
 </kw>
 <kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-11-21T21:48:15.769989" level="INFO">${prompts_visible} = 0</msg>
 <var>${prompts_visible}</var>
 <arg>xpath=//button[contains(@class, "bg-gray-200")]</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.323510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:15.765989" elapsed="0.004000"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2024-11-21T21:48:15.769989" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
 <arg>${prompts_visible}</arg>
 <arg>0</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.323510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:15.769989" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-11-21T20:59:01.323510" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-21T21:48:15.769989" elapsed="2.142386"/>
 </kw>
-<status status="FAIL" start="2024-11-21T20:58:59.452494" elapsed="1.872016">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF76813F4F5]
-	(No symbol) [0x00007FF7681E6247]
-	(No symbol) [0x00007FF7681FECE2]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</status>
+<status status="PASS" start="2024-11-21T21:48:06.363513" elapsed="11.549866"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-21T20:59:01.325510" elapsed="2.085422"/>
+<status status="PASS" start="2024-11-21T21:48:17.914379" elapsed="0.000000"/>
 </kw>
-<status status="FAIL" start="2024-11-21T20:58:46.890051" elapsed="16.520881"/>
+<status status="PASS" start="2024-11-21T21:47:43.110356" elapsed="34.804023"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="3" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="3" skip="0" id="s1" name="robotTest">robotTest</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="robotTest">robotTest</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-11-21T20:59:01.319269" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=131.0.6778.71)
-Stacktrace:
-	GetHandleVerifier [0x00007FF768356CB5+28821]
-	(No symbol) [0x00007FF7682C3840]
-	(No symbol) [0x00007FF76816578A]
-	(No symbol) [0x00007FF76813F4F5]
-	(No symbol) [0x00007FF7681E6247]
-	(No symbol) [0x00007FF7681FECE2]
-	(No symbol) [0x00007FF7681DF0A3]
-	(No symbol) [0x00007FF7681AA778]
-	(No symbol) [0x00007FF7681AB8E1]
-	GetHandleVerifier [0x00007FF76868FCAD+3408013]
-	GetHandleVerifier [0x00007FF7686A741F+3504127]
-	GetHandleVerifier [0x00007FF76869B5FD+3455453]
-	GetHandleVerifier [0x00007FF76841BDBB+835995]
-	(No symbol) [0x00007FF7682CEB5F]
-	(No symbol) [0x00007FF7682CA814]
-	(No symbol) [0x00007FF7682CA9AD]
-	(No symbol) [0x00007FF7682BA199]
-	BaseThreadInitThunk [0x00007FFFD189DBE7+23]
-	RtlUserThreadStart [0x00007FFFD251FBEC+44]
-</msg>
 </errors>
 </robot>

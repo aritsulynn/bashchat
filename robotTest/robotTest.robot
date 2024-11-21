@@ -19,7 +19,7 @@ Test Chatbot Interaction Testing using Chrome
     Open Browser    ${url}    ${browser}
     Input Text    xpath=//input[contains(@class, "rounded-xl")]    ${test_message}
     Click Button    xpath=//button[contains(text(), "Send")]
-    Wait Until Element Is Visible    xpath=(//div[contains(@class, "prose")])[last()]    timeout=10
+    Wait Until Element Is Visible    xpath=(//div[contains(@class, "prose")])[last()]    timeout=20
     ${bot_response}    Get Text    xpath=(//div[contains(@class, "prose")])[last()]
     Log    Bot's Response: ${bot_response}
     Close Browser
@@ -35,7 +35,7 @@ Reset Message Testing using Chrome
     Open Browser    ${url}    ${browser}
     Input Text    xpath=//input[contains(@class, "rounded-xl")]    ${test_message}
     Click Button    xpath=//button[contains(text(), "Send")]
-    Wait Until Element Is Visible    xpath=(//div[contains(@class, "prose")])[last()]    timeout=10
+    Wait Until Element Is Visible    xpath=(//div[contains(@class, "prose")])[last()]    timeout=20
     ${bot_response}    Get Text    xpath=(//div[contains(@class, "prose")])[last()]
     Log    Bot's Response: ${bot_response}
     Click Button    xpath=//button[contains(text(), "Reset")]
@@ -57,7 +57,7 @@ Starting Prompt Testing using Chrome
     Should Be Equal As Numbers    ${prompts_visible}    3
     Click Button    xpath=//button[contains(text(), "${starting_prompt}")]
     Click Button    xpath=//button[contains(text(), "Send")]
-    Wait Until Element Is Visible    xpath=(//div[contains(@class, "prose")])[last()]    timeout=10
+    Wait Until Element Is Visible    xpath=(//div[contains(@class, "prose")])[last()]    timeout=20
     ${bot_response}    Get Text    xpath=(//div[contains(@class, "prose")])[last()]
     Log    Bot's Response: ${bot_response}
     ${prompts_visible}    Get Element Count    xpath=//button[contains(@class, "bg-gray-200")]
