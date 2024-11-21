@@ -1,0 +1,22 @@
+services:
+  bashchat:
+    container_name: bashchat
+    image: bashchat
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+
+  flowise:
+    image: flowiseai/flowise:2.1.2
+    container_name: flowise
+    ports:
+      - "15542:3000"
+    environment:
+      - PORT=3000
+      - DEBUG=true
+    volumes:
+      - ./flowise/.flowise:/root/.flowise
